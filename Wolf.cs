@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,10 +13,14 @@ namespace Animal
         {
             _nameOfPack = nameOfPack;
         }
+        public override void Bark()
+        {
+            Console.WriteLine("rrrrrrr");
+        }
 
         public override string ToString()
         {
-            return $"nameOfPack: {_nameOfPack} {base.ToString()}";
+            return $"nameOfPack: {_nameOfPack}  {base.ToString()}";
         }
-    }
+    }   
 }

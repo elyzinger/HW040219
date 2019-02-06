@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace Animal
 {
-     class Dog : Animal
+    class Dog : Animal
     {
         public string _FavoritFood;
-        public Dog(string name, string FavoritFood) : base (name)
+        public Dog(string name, string FavoritFood) : base(name)
         {
             _FavoritFood = FavoritFood;
         }
-        public virtual void bark()
+        public override void MakeSound()
         {
-            Console.WriteLine("hao hao");
+            Bark();
         }
+        public virtual void Bark()
+        {
 
+        }
         public override string ToString()
         {
             return $"FavoritFood: {_FavoritFood}  {base.ToString()}";

@@ -20,7 +20,7 @@ namespace Animal
 
         public override string ToString()
         {
-            return $"numberOfPonyTails: {_numberOfPonyTails} + base.ToString()";
+            return $"numberOfPonyTails: {_numberOfPonyTails} {base.ToString()"};
         }
     }
 }

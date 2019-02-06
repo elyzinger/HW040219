@@ -20,7 +20,7 @@ namespace Animal
 
         public override string ToString()
         {
-            return $"racing horse: {_RacingHorse} base.ToString()";
+            return $"racing horse: {_RacingHorse} {base.ToString()}";
         }
     }
 }

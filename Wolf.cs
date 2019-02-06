@@ -16,7 +16,7 @@ namespace Animal
 
         public override string ToString()
         {
-            return $"nameOfPack: {_nameOfPack} + base.ToString()";
+            return $"nameOfPack: {_nameOfPack} {base.ToString()}";
         }
     }
 }

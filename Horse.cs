@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,11 +13,14 @@ namespace Animal
         {
             _RacingHorse = RacingHorse;
         }
+        public override void MakeSound()
+        {
+            Neigh();
+        }
         public virtual void Neigh()
         {
             Console.WriteLine("aaaaa");
         }
-
         public override string ToString()
         {
             return $"racing horse: {_RacingHorse} {base.ToString()}";

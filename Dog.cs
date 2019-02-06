@@ -20,7 +20,7 @@ namespace Animal
 
         public override string ToString()
         {
-            return $"FavoritFood: {_FavoritFood} + base.ToString()";
+            return $"FavoritFood: {_FavoritFood}  {base.ToString()}";
         }
     }
 }
